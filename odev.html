@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENES YAYLI CV</title>
+    <style>
+        body {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h3 {
+            text-align: center;
+            color: #f1c40f;
+        }
+
+        #es {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f1c40f;
+        }
+
+        .contact-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .image-container img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #f1c40f;
+            padding: 5px;
+            background-color: #34495e;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px #f1c40f;
+        }
+
+        .small-icon {
+            width: 15px !important;
+            height: 15px !important;
+            vertical-align: middle;
+            border-radius: 50%;
+            border: 2px solid #f1c40f;
+            padding: 2px;
+            background-color: #34495e;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .small-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px #f1c40f;
+        }
+
+        details {
+            cursor: pointer;
+            margin: 10px auto;
+            max-width: 600px;
+            padding: 10px;
+            border: 1px solid #f1c40f;
+            border-radius: 5px;
+            background-color: #34495e;
+        }
+
+        summary {
+            font-size: 20px;
+            font-weight: bold;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            color: #f1c40f;
+        }
+
+        summary::before {
+            content: '\25B6';
+            margin-right: 10px;
+            transition: transform 0.2s;
+        }
+
+        details[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .small-icon {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        .button {
+            background-color: #f1c40f;
+            color: #34495e;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #e67e22;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <h1>WEB SITE DENEME 1</h1>
+    <img id="es" src="resd.png"/>
+    
+    <div class="contact-container">
+        <h3>CONTACT :</h3>
+        <div class="image-container">
+            <abbr title="MAİL GÖNDERMEK İÇİN TIKLAYIN enes.yayli@hotmail.com">
+                <a href="mailto:enes.yayli@hotmail.com">
+                    <img src="mail.png" />
+                </a>
+            </abbr>
+            <abbr title="0552 737 6165">
+                <img src="indir.png" />
+            </abbr>
+        </div>
+    </div>
+     
+    <h1><strong>About Me</strong></h1> 
+    <p style="text-align: center; font-size: 20px;">
+        I am currently a second-year student in <strong>Computer Engineering at Karabuk University</strong>. 
+        I am a responsible engineering candidate, prone to teamwork and open to self-improvement.
+    </p>   
+
+    <details>
+        <summary>Languages</summary>
+        <ul>
+            <li>English</li>
+            <li>Turkish</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Expertise</summary>
+        <ul>
+            <li>Management Skills</li>
+            <li>Creativity</li>
+            <li>Critical Thinking</li>
+            <li>Leadership</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Education</summary>
+        <ul>
+            <li><strong>Karabuk University</strong> - Computer Engineering (2022-2027)</li>
+            <li><strong>Yahya Kemal Beyatli Anatolian High School</strong> (2015-2019)</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>My Hobbies</summary>
+        <ul>
+            <li>Cooking</li>
+            <li>
+                <abbr title="OYNADIĞIM MMO OYUNLARINDAN BİRTANESİ">
+                    <button class="button">
+                        <a href="https://riseonlineworld.com/?gad_source=1&gclid=CjwKCAjwnPS-BhBxEiwAZjMF0u3tJr7E53Wvz612dnbQCNquRFYpd-bdfn6E19a3K2t20xJwQQBpdRoCBYQQAvD_BwE">
+                            MMO RPG
+                        </a>
+                    </button>
+                </abbr>
+            </li>
+            <li>Chess</li>
+            <li>
+                <abbr title="SEVDİĞİM ŞARKI TÜRLERİ">
+                    <button class="button">
+                        <a href="https://www.youtube.com/watch?v=WwKEAGDbS48">
+                            Listening to Song
+                        </a>
+                    </button>
+                </abbr>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Experience</summary>
+        <ul>
+            <li>Waiter</li>
+            <li>School Presidency</li>
+        </ul>
+    </details>
+</body>
+</html>
